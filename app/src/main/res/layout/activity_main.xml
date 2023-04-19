@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Texto"
+        android:layout_width="302dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="Pon nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnVerifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Verificar"
+        app:layout_constraintEnd_toEndOf="@+id/Texto"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/Texto"
+        app:layout_constraintTop_toBottomOf="@+id/Texto" />
+
+    <TextView
+        android:id="@+id/tVResultado"
+        android:layout_width="297dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="48dp"
+        android:hint="Result"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/btnVerifi"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/btnVerifi"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerifi" />
+</androidx.constraintlayout.widget.ConstraintLayout>
